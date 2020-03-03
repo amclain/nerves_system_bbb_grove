@@ -1,7 +1,7 @@
 defmodule NervesSystemBbb.MixProject do
   use Mix.Project
 
-  @app :nerves_system_bbb
+  @app :nerves_system_bbb_grove
   @version Path.join(__DIR__, "VERSION")
            |> File.read!()
            |> String.trim()
@@ -35,7 +35,7 @@ defmodule NervesSystemBbb.MixProject do
     [
       type: :system,
       artifact_sites: [
-        {:github_releases, "nerves-project/#{@app}"}
+        # {:github_releases, "amclain/#{@app}"}
       ],
       build_runner_opts: build_runner_opts(),
       platform: Nerves.System.BR,
